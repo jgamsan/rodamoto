@@ -19,12 +19,11 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'devise-i18n'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 group :production do
