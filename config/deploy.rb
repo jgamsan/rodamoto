@@ -4,7 +4,7 @@ require "bundler/capistrano"
 set :application, "rodamoto"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
-set :port, 61323
+set :port, 53877
 set :repository,  "git@github.com:jgamsan/rodamoto.git"
 set :scm, :git
 set :keep_releases, 2
