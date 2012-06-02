@@ -1,10 +1,17 @@
 GIT
-  remote: git://github.com/spree/spree_i18n.git
-  revision: e5e3e189c8438c381e4ae89c22d7d22233b314ca
+  remote: git://github.com/jgamsan/spree_i18n.git
+  revision: f2ad8e656a1920011cb230db3166ce2c6d5ddb9d
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.5)
       spree (~> 1.1.0)
+
+GIT
+  remote: git://github.com/jgamsan/spree_settings.git
+  revision: e180d79214f2d783eee24d54f78bc3c125b66f29
+  specs:
+    spree_settings (1.1.1)
+      spree_core (~> 1.1.1)
 
 GIT
   remote: git://github.com/spree/spree_paypal_express.git
@@ -84,9 +91,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
-    deface (0.8.0)
+    deface (0.9.1)
       nokogiri (~> 1.5.0)
-      rails (>= 3.0.9)
+      rails (~> 3.1)
     devise (2.0.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.0.3)
@@ -127,7 +134,7 @@ GEM
     mime-types (1.18)
     money (3.7.1)
       i18n (~> 0.4)
-    multi_json (1.3.5)
+    multi_json (1.3.6)
     multi_xml (0.5.1)
     nested_set (1.7.0)
       activerecord (>= 3.0.0)
@@ -139,7 +146,7 @@ GEM
     net-ssh (2.3.0)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
-    nokogiri (1.5.2)
+    nokogiri (1.5.3)
     nori (1.1.0)
     orm_adapter (0.0.7)
     paperclip (2.7.0)
@@ -293,6 +300,7 @@ DEPENDENCIES
   spree
   spree_i18n!
   spree_paypal_express!
+  spree_settings!
   spree_skrill
   spree_usa_epay
   therubyracer

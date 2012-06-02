@@ -1,10 +1,10 @@
 require "rvm/capistrano"
-set :rvm_ruby_string, 'ruby-1.9.3-p125'
+set :rvm_ruby_string, 'ruby-1.9.3-p194'
 require "bundler/capistrano"
 set :application, "rodamoto"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
-set :port, 53877
+set :port, 54101
 set :repository,  "git@github.com:jgamsan/rodamoto.git"
 set :scm, :git
 set :keep_releases, 2

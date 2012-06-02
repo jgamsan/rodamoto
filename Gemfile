@@ -47,5 +47,6 @@ end
 gem 'spree'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
-gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
+gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
+gem "spree_settings", :git => "git://github.com/jgamsan/spree_settings.git"
