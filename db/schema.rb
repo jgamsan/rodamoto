@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120501151869) do
+ActiveRecord::Schema.define(:version => 20120618093004) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -124,6 +124,18 @@ ActiveRecord::Schema.define(:version => 20120501151869) do
     t.datetime "updated_at",                  :null => false
     t.string   "gateway_customer_profile_id"
     t.string   "gateway_payment_profile_id"
+  end
+
+  create_table "spree_cycle_images", :force => true do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "description"
+    t.string   "link"
+    t.integer  "position"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "spree_gateways", :force => true do |t|
@@ -265,6 +277,14 @@ ActiveRecord::Schema.define(:version => 20120501151869) do
 
   add_index "spree_pending_promotions", ["promotion_id"], :name => "index_spree_pending_promotions_on_promotion_id"
   add_index "spree_pending_promotions", ["user_id"], :name => "index_spree_pending_promotions_on_user_id"
+
+  create_table "spree_posts", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.boolean  "published"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "spree_preferences", :force => true do |t|
     t.string   "name"
@@ -511,6 +531,48 @@ ActiveRecord::Schema.define(:version => 20120501151869) do
   add_index "spree_taxons", ["permalink"], :name => "index_taxons_on_permalink"
   add_index "spree_taxons", ["taxonomy_id"], :name => "index_taxons_on_taxonomy_id"
 
+  create_table "spree_tire_frs", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_ics", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_innertubes", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_profiles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_speed_codes", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_tttls", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_widths", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "spree_tokenized_permissions", :force => true do |t|
     t.integer  "permissable_id"
     t.string   "permissable_type"
@@ -560,18 +622,25 @@ ActiveRecord::Schema.define(:version => 20120501151869) do
   add_index "spree_users", ["persistence_token"], :name => "index_users_on_persistence_token"
 
   create_table "spree_variants", :force => true do |t|
-    t.string   "sku",                                         :default => "",    :null => false
-    t.decimal  "price",         :precision => 8, :scale => 2,                    :null => false
-    t.decimal  "weight",        :precision => 8, :scale => 2
-    t.decimal  "height",        :precision => 8, :scale => 2
-    t.decimal  "width",         :precision => 8, :scale => 2
-    t.decimal  "depth",         :precision => 8, :scale => 2
+    t.string   "sku",                                              :default => "",    :null => false
+    t.decimal  "price",              :precision => 8, :scale => 2,                    :null => false
+    t.decimal  "weight",             :precision => 8, :scale => 2
+    t.decimal  "height",             :precision => 8, :scale => 2
+    t.decimal  "width",              :precision => 8, :scale => 2
+    t.decimal  "depth",              :precision => 8, :scale => 2
     t.datetime "deleted_at"
-    t.boolean  "is_master",                                   :default => false
+    t.boolean  "is_master",                                        :default => false
     t.integer  "product_id"
-    t.integer  "count_on_hand",                               :default => 0,     :null => false
-    t.decimal  "cost_price",    :precision => 8, :scale => 2
+    t.integer  "count_on_hand",                                    :default => 0,     :null => false
+    t.decimal  "cost_price",         :precision => 8, :scale => 2
     t.integer  "position"
+    t.integer  "tire_width_id"
+    t.integer  "tire_profile_id"
+    t.integer  "tire_innertube_id"
+    t.integer  "tire_ic_id"
+    t.integer  "tire_speed_code_id"
+    t.integer  "tire_fr_id"
+    t.integer  "tire_tttl_id"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_variants_on_product_id"

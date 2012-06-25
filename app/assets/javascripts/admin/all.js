@@ -10,3 +10,5 @@
 //= require admin/spree_promo
 
 //= require_tree .
+//= require admin/spree_cycle
+//= require admin/spree_addings_for_rodamoto
