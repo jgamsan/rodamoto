@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_settings.git
-  revision: 37737d6108d729256b9a65e525aa8033cb05c352
+  revision: 0fba5239450f9c8792b8698a187c2867eb5e9d51
   specs:
     spree_settings (1.1.1)
       spree_core (~> 1.1.1)
