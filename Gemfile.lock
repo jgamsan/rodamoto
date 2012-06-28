@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodamoto.git
-  revision: 9c78b7456d6aedb337aa2f77e87f6328bfb06831
+  revision: 6f7de4c066cde0ae1a4dc75976dc7c78377e0c2c
   specs:
     spree_addings_for_rodamoto (1.1.1)
       spree_core (~> 1.1.1)
@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_i18n.git
-  revision: d3163dff10600b1c4c089e6b65e05bb0dc0bd1fe
+  revision: fd799f17fb0d795eedf24390e5e949eb3a9615bb
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.5)
@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_settings.git
-  revision: 0fba5239450f9c8792b8698a187c2867eb5e9d51
+  revision: da929388ab6872bd12301c8368aa4a5fc860de39
   specs:
     spree_settings (1.1.1)
       spree_core (~> 1.1.1)

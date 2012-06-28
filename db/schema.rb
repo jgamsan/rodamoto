@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120618093004) do
+ActiveRecord::Schema.define(:version => 20120626173414) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -641,6 +641,10 @@ ActiveRecord::Schema.define(:version => 20120618093004) do
     t.integer  "tire_speed_code_id"
     t.integer  "tire_fr_id"
     t.integer  "tire_tttl_id"
+    t.decimal  "pvp3",               :precision => 8, :scale => 2
+    t.decimal  "pvp7",               :precision => 8, :scale => 2
+    t.decimal  "pvp9",               :precision => 8, :scale => 2
+    t.decimal  "pvp12",              :precision => 8, :scale => 2
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_variants_on_product_id"
