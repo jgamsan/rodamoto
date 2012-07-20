@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodamoto.git
-  revision: 6f7de4c066cde0ae1a4dc75976dc7c78377e0c2c
+  revision: 382935c3d2f169af40d23a6f5886faea8784172a
   specs:
     spree_addings_for_rodamoto (1.1.1)
       spree_core (~> 1.1.1)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_import_dbf.git
-  revision: 69e8069006c2be7c150726ab5cf506a6d8c28cf1
+  revision: e880e5ab290b1113e23ba36dc9afae8f953c3d76
   specs:
     spree_import_dbf (1.0)
       spree_auth (>= 0.60.0)
@@ -44,14 +44,14 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_settings.git
-  revision: da929388ab6872bd12301c8368aa4a5fc860de39
+  revision: 32323a0c92df8c5ee9b5fa5285d1d52599a5a1ee
   specs:
     spree_settings (1.1.1)
       spree_core (~> 1.1.1)
 
 GIT
   remote: git://github.com/spree/spree_paypal_express.git
-  revision: d48f4649506e876b88244dcb4e5a86250e4ef8f0
+  revision: ce3d71193f11ae9f219c6b2b1153e186f9c4914c
   specs:
     spree_paypal_express (1.1.0)
       spree_core (>= 1.0.0)
@@ -98,9 +98,9 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     acts_as_list (0.1.4)
-    akami (1.1.0)
+    akami (1.2.0)
       gyoku (>= 0.4.0)
-      nokogiri (>= 1.5.2)
+      nokogiri (>= 1.4.0)
     arel (3.0.2)
     awesome_print (1.0.2)
     aws-sdk (1.3.9)
@@ -124,7 +124,7 @@ GEM
       capistrano
     clipboard (1.0.1)
     cocaine (0.2.1)
-    coderay (1.0.6)
+    coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -141,7 +141,7 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
-    devise-i18n (0.4.6)
+    devise-i18n (0.5.0)
     erubis (2.7.0)
     every_day_irb (1.2.2)
     execjs (1.4.0)
@@ -150,11 +150,11 @@ GEM
       paint (>= 0.8.1)
       unicode-display_width (>= 0.1.1)
     ffaker (1.12.1)
-    foreman (0.47.0)
+    foreman (0.51.0)
       thor (>= 0.13.6)
     g (1.6.0)
       ruby_gntp
-    gyoku (0.4.5)
+    gyoku (0.4.6)
       builder (>= 2.1.2)
     haml (3.1.6)
     haml-rails (0.3.4)
@@ -168,7 +168,7 @@ GEM
     httparty (0.8.3)
       multi_json (~> 1.0)
       multi_xml
-    httpi (1.0.0)
+    httpi (1.1.1)
       rack
     i18n (0.6.0)
     interactive_editor (0.0.10)
@@ -207,7 +207,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     method_locator (0.0.4)
-    method_source (0.7.1)
+    method_source (0.8)
     methodfinder (1.2.5)
     mime-types (1.19)
     money (3.7.1)
@@ -225,7 +225,7 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
-    nori (1.1.0)
+    nori (1.1.3)
     ori (0.1.0)
     orm_adapter (0.0.7)
     paint (0.8.5)
@@ -256,7 +256,7 @@ GEM
       activesupport (= 3.2.3)
       bundler (~> 1.0)
       railties (= 3.2.3)
-    rails-i18n (0.6.4)
+    rails-i18n (0.6.5)
       i18n (~> 0.5)
     railties (3.2.3)
       actionpack (= 3.2.3)
@@ -274,21 +274,21 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     ruby_gntp (0.3.4)
-    rvm-capistrano (1.2.2)
+    rvm-capistrano (1.2.5)
       capistrano (>= 2.0.0)
-    sass (3.1.19)
+    sass (3.1.20)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    savon (1.0.0)
-      akami (~> 1.1)
+    savon (1.1.0)
+      akami (~> 1.2.0)
       builder (>= 2.1.2)
-      gyoku (>= 0.4.0)
-      httpi (~> 1.0)
+      gyoku (~> 0.4.5)
+      httpi (~> 1.1.0)
       nokogiri (>= 1.4.0)
-      nori (~> 1.1)
-      wasabi (~> 2.2)
+      nori (~> 1.1.0)
+      wasabi (~> 2.5.0)
     sketches (0.1.1)
     spoon (0.0.1)
     spree (1.1.1)
@@ -351,7 +351,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.33)
-    uglifier (1.2.5)
+    uglifier (1.2.6)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
     unicode-display_width (0.1.1)
@@ -359,10 +359,10 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    uuidtools (2.1.2)
+    uuidtools (2.1.3)
     warden (1.1.1)
       rack (>= 1.0)
-    wasabi (2.4.1)
+    wasabi (2.5.0)
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
     wirb (0.4.2)

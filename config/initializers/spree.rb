@@ -13,4 +13,5 @@ Spree.config do |config|
   config.default_country_id = 188
   config.default_locale = "es"
   config.logo = "logo-rodamoto.png"
+  config.prices_inc_tax = true
 end
